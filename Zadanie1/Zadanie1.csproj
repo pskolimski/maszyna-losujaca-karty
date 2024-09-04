@@ -1,0 +1,394 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="images\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="images\cards\2C@1x.png" />
+      <None Remove="images\cards\2C@2x.png" />
+      <None Remove="images\cards\2C@3x.png" />
+      <None Remove="images\cards\2D@1x.png" />
+      <None Remove="images\cards\2D@2x.png" />
+      <None Remove="images\cards\2D@3x.png" />
+      <None Remove="images\cards\2H@1x.png" />
+      <None Remove="images\cards\2H@2x.png" />
+      <None Remove="images\cards\2H@3x.png" />
+      <None Remove="images\cards\2S@1x.png" />
+      <None Remove="images\cards\2S@2x.png" />
+      <None Remove="images\cards\2S@3x.png" />
+      <None Remove="images\cards\3C@1x.png" />
+      <None Remove="images\cards\3C@2x.png" />
+      <None Remove="images\cards\3C@3x.png" />
+      <None Remove="images\cards\3D@1x.png" />
+      <None Remove="images\cards\3D@2x.png" />
+      <None Remove="images\cards\3D@3x.png" />
+      <None Remove="images\cards\3H@1x.png" />
+      <None Remove="images\cards\3H@2x.png" />
+      <None Remove="images\cards\3H@3x.png" />
+      <None Remove="images\cards\3S@1x.png" />
+      <None Remove="images\cards\3S@2x.png" />
+      <None Remove="images\cards\3S@3x.png" />
+      <None Remove="images\cards\4C@1x.png" />
+      <None Remove="images\cards\4C@2x.png" />
+      <None Remove="images\cards\4C@3x.png" />
+      <None Remove="images\cards\4D@1x.png" />
+      <None Remove="images\cards\4D@2x.png" />
+      <None Remove="images\cards\4D@3x.png" />
+      <None Remove="images\cards\4H@1x.png" />
+      <None Remove="images\cards\4H@2x.png" />
+      <None Remove="images\cards\4H@3x.png" />
+      <None Remove="images\cards\4S@1x.png" />
+      <None Remove="images\cards\4S@2x.png" />
+      <None Remove="images\cards\4S@3x.png" />
+      <None Remove="images\cards\5C@1x.png" />
+      <None Remove="images\cards\5C@2x.png" />
+      <None Remove="images\cards\5C@3x.png" />
+      <None Remove="images\cards\5D@1x.png" />
+      <None Remove="images\cards\5D@2x.png" />
+      <None Remove="images\cards\5D@3x.png" />
+      <None Remove="images\cards\5H@1x.png" />
+      <None Remove="images\cards\5H@2x.png" />
+      <None Remove="images\cards\5H@3x.png" />
+      <None Remove="images\cards\5S@1x.png" />
+      <None Remove="images\cards\5S@2x.png" />
+      <None Remove="images\cards\5S@3x.png" />
+      <None Remove="images\cards\6C@1x.png" />
+      <None Remove="images\cards\6C@2x.png" />
+      <None Remove="images\cards\6C@3x.png" />
+      <None Remove="images\cards\6D@1x.png" />
+      <None Remove="images\cards\6D@2x.png" />
+      <None Remove="images\cards\6D@3x.png" />
+      <None Remove="images\cards\6H@1x.png" />
+      <None Remove="images\cards\6H@2x.png" />
+      <None Remove="images\cards\6H@3x.png" />
+      <None Remove="images\cards\6S@1x.png" />
+      <None Remove="images\cards\6S@2x.png" />
+      <None Remove="images\cards\6S@3x.png" />
+      <None Remove="images\cards\7C@1x.png" />
+      <None Remove="images\cards\7C@2x.png" />
+      <None Remove="images\cards\7C@3x.png" />
+      <None Remove="images\cards\7D@1x.png" />
+      <None Remove="images\cards\7D@2x.png" />
+      <None Remove="images\cards\7D@3x.png" />
+      <None Remove="images\cards\7H@1x.png" />
+      <None Remove="images\cards\7H@2x.png" />
+      <None Remove="images\cards\7H@3x.png" />
+      <None Remove="images\cards\7S@1x.png" />
+      <None Remove="images\cards\7S@2x.png" />
+      <None Remove="images\cards\7S@3x.png" />
+      <None Remove="images\cards\8C@1x.png" />
+      <None Remove="images\cards\8C@2x.png" />
+      <None Remove="images\cards\8C@3x.png" />
+      <None Remove="images\cards\8D@1x.png" />
+      <None Remove="images\cards\8D@2x.png" />
+      <None Remove="images\cards\8D@3x.png" />
+      <None Remove="images\cards\8H@1x.png" />
+      <None Remove="images\cards\8H@2x.png" />
+      <None Remove="images\cards\8H@3x.png" />
+      <None Remove="images\cards\8S@1x.png" />
+      <None Remove="images\cards\8S@2x.png" />
+      <None Remove="images\cards\8S@3x.png" />
+      <None Remove="images\cards\9C@1x.png" />
+      <None Remove="images\cards\9C@2x.png" />
+      <None Remove="images\cards\9C@3x.png" />
+      <None Remove="images\cards\9D@1x.png" />
+      <None Remove="images\cards\9D@2x.png" />
+      <None Remove="images\cards\9D@3x.png" />
+      <None Remove="images\cards\9H@1x.png" />
+      <None Remove="images\cards\9H@2x.png" />
+      <None Remove="images\cards\9H@3x.png" />
+      <None Remove="images\cards\9S@1x.png" />
+      <None Remove="images\cards\9S@2x.png" />
+      <None Remove="images\cards\9S@3x.png" />
+      <None Remove="images\cards\AC@1x.png" />
+      <None Remove="images\cards\AC@2x.png" />
+      <None Remove="images\cards\AC@3x.png" />
+      <None Remove="images\cards\AD@1x.png" />
+      <None Remove="images\cards\AD@2x.png" />
+      <None Remove="images\cards\AD@3x.png" />
+      <None Remove="images\cards\AH@1x.png" />
+      <None Remove="images\cards\AH@2x.png" />
+      <None Remove="images\cards\AH@3x.png" />
+      <None Remove="images\cards\AS@1x.png" />
+      <None Remove="images\cards\AS@2x.png" />
+      <None Remove="images\cards\AS@3x.png" />
+      <None Remove="images\cards\JC@1x.png" />
+      <None Remove="images\cards\JC@2x.png" />
+      <None Remove="images\cards\JC@3x.png" />
+      <None Remove="images\cards\JD@1x.png" />
+      <None Remove="images\cards\JD@2x.png" />
+      <None Remove="images\cards\JD@3x.png" />
+      <None Remove="images\cards\JH@1x.png" />
+      <None Remove="images\cards\JH@2x.png" />
+      <None Remove="images\cards\JH@3x.png" />
+      <None Remove="images\cards\joker@1x.png" />
+      <None Remove="images\cards\joker@2x.png" />
+      <None Remove="images\cards\joker@3x.png" />
+      <None Remove="images\cards\JS@1x.png" />
+      <None Remove="images\cards\JS@2x.png" />
+      <None Remove="images\cards\JS@3x.png" />
+      <None Remove="images\cards\KC@1x.png" />
+      <None Remove="images\cards\KC@2x.png" />
+      <None Remove="images\cards\KC@3x.png" />
+      <None Remove="images\cards\KD@1x.png" />
+      <None Remove="images\cards\KD@2x.png" />
+      <None Remove="images\cards\KD@3x.png" />
+      <None Remove="images\cards\KH@1x.png" />
+      <None Remove="images\cards\KH@2x.png" />
+      <None Remove="images\cards\KH@3x.png" />
+      <None Remove="images\cards\KS@1x.png" />
+      <None Remove="images\cards\KS@2x.png" />
+      <None Remove="images\cards\KS@3x.png" />
+      <None Remove="images\cards\QC@1x.png" />
+      <None Remove="images\cards\QC@2x.png" />
+      <None Remove="images\cards\QC@3x.png" />
+      <None Remove="images\cards\QD@1x.png" />
+      <None Remove="images\cards\QD@2x.png" />
+      <None Remove="images\cards\QD@3x.png" />
+      <None Remove="images\cards\QH@1x.png" />
+      <None Remove="images\cards\QH@2x.png" />
+      <None Remove="images\cards\QH@3x.png" />
+      <None Remove="images\cards\QS@1x.png" />
+      <None Remove="images\cards\QS@2x.png" />
+      <None Remove="images\cards\QS@3x.png" />
+      <None Remove="images\cards\TC@1x.png" />
+      <None Remove="images\cards\TC@2x.png" />
+      <None Remove="images\cards\TC@3x.png" />
+      <None Remove="images\cards\TD@1x.png" />
+      <None Remove="images\cards\TD@2x.png" />
+      <None Remove="images\cards\TD@3x.png" />
+      <None Remove="images\cards\TH@1x.png" />
+      <None Remove="images\cards\TH@2x.png" />
+      <None Remove="images\cards\TH@3x.png" />
+      <None Remove="images\cards\TS@1x.png" />
+      <None Remove="images\cards\TS@2x.png" />
+      <None Remove="images\cards\TS@3x.png" />
+      <None Remove="cards.json" />
+      <None Remove="images\cards\2_of_clubs.png" />
+      <Content Include="images\cards\2_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\2_of_diamonds.png" />
+      <Content Include="images\cards\2_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\2_of_hearts.png" />
+      <Content Include="images\cards\2_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\2_of_spades.png" />
+      <Content Include="images\cards\2_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\3_of_clubs.png" />
+      <Content Include="images\cards\3_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\3_of_diamonds.png" />
+      <Content Include="images\cards\3_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\3_of_hearts.png" />
+      <Content Include="images\cards\3_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\3_of_spades.png" />
+      <Content Include="images\cards\3_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\4_of_clubs.png" />
+      <Content Include="images\cards\4_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\4_of_diamonds.png" />
+      <Content Include="images\cards\4_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\4_of_hearts.png" />
+      <Content Include="images\cards\4_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\4_of_spades.png" />
+      <Content Include="images\cards\4_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\5_of_clubs.png" />
+      <Content Include="images\cards\5_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\5_of_diamonds.png" />
+      <Content Include="images\cards\5_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\5_of_hearts.png" />
+      <Content Include="images\cards\5_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\5_of_spades.png" />
+      <Content Include="images\cards\5_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\6_of_clubs.png" />
+      <Content Include="images\cards\6_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\6_of_diamonds.png" />
+      <Content Include="images\cards\6_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\6_of_hearts.png" />
+      <Content Include="images\cards\6_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\6_of_spades.png" />
+      <Content Include="images\cards\6_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\7_of_clubs.png" />
+      <Content Include="images\cards\7_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\7_of_diamonds.png" />
+      <Content Include="images\cards\7_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\7_of_hearts.png" />
+      <Content Include="images\cards\7_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\7_of_spades.png" />
+      <Content Include="images\cards\7_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\8_of_clubs.png" />
+      <Content Include="images\cards\8_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\8_of_diamonds.png" />
+      <Content Include="images\cards\8_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\8_of_hearts.png" />
+      <Content Include="images\cards\8_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\8_of_spades.png" />
+      <Content Include="images\cards\8_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\9_of_clubs.png" />
+      <Content Include="images\cards\9_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\9_of_diamonds.png" />
+      <Content Include="images\cards\9_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\9_of_hearts.png" />
+      <Content Include="images\cards\9_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\9_of_spades.png" />
+      <Content Include="images\cards\9_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\10_of_clubs.png" />
+      <Content Include="images\cards\10_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\10_of_diamonds.png" />
+      <Content Include="images\cards\10_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\10_of_hearts.png" />
+      <Content Include="images\cards\10_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\10_of_spades.png" />
+      <Content Include="images\cards\10_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\ace_of_clubs.png" />
+      <Content Include="images\cards\ace_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\ace_of_diamonds.png" />
+      <Content Include="images\cards\ace_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\ace_of_hearts.png" />
+      <Content Include="images\cards\ace_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\ace_of_spades.png" />
+      <Content Include="images\cards\ace_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\back.png" />
+      <None Remove="images\cards\back@2x.png" />
+      <None Remove="images\cards\black_joker.png" />
+      <None Remove="images\cards\jack_of_clubs.png" />
+      <Content Include="images\cards\jack_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\jack_of_diamonds.png" />
+      <Content Include="images\cards\jack_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\jack_of_hearts.png" />
+      <Content Include="images\cards\jack_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\jack_of_spades.png" />
+      <Content Include="images\cards\jack_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\king_of_clubs.png" />
+      <Content Include="images\cards\king_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\king_of_diamonds.png" />
+      <Content Include="images\cards\king_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\king_of_hearts.png" />
+      <Content Include="images\cards\king_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\king_of_spades.png" />
+      <Content Include="images\cards\king_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\queen_of_clubs.png" />
+      <Content Include="images\cards\queen_of_clubs.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\queen_of_diamonds.png" />
+      <Content Include="images\cards\queen_of_diamonds.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\queen_of_hearts.png" />
+      <Content Include="images\cards\queen_of_hearts.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\queen_of_spades.png" />
+      <Content Include="images\cards\queen_of_spades.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="images\cards\red_joker.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
