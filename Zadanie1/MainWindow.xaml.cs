@@ -54,12 +54,16 @@ public partial class MainWindow : Window
             BitmapImage bitmap = new BitmapImage(new Uri(cardPath, UriKind.Relative));
             images[i].Source = bitmap;
 
-            string[] cardInfo = cardPath.Split('_');
+            string cardWithoutPath = cardPath.Split('/').Last();
+            string cardWithoutPath2 = cardWithoutPath.Split('\\').Last();
+            string[] cardInfo = cardWithoutPath2.Split('_');
             actualCards.Add(new Card()
             {
-                Color = cardInfo[2],
+                Color = cardInfo[2].Split(".").First(),
                 Value = cardInfo[0]
             });
         }
+
+        MessageBox.Show(PokerHandEvaluator.EvaluateHand(actualCards));
     }
 }
