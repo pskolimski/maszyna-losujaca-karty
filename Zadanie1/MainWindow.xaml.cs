@@ -64,6 +64,10 @@ public partial class MainWindow : Window
             });
         }
 
+    }
+
+    private void CheckCombination(object sender, RoutedEventArgs e)
+    {
         MessageBox.Show(PokerHandEvaluator.EvaluateHand(actualCards));
     }
 }
